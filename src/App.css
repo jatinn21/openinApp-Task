@@ -6,7 +6,7 @@
 section.left__section {
   height: 100%;
   width: 50vw;
-  background-image: url("./assets/Left\ side.png");
+  background-image: url("../public/assets/left-side.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -25,7 +25,7 @@ div.top__left {
   width: 5rem;
   border-radius: 50%;
   background-color: #fcfcff;
-  background-image: url("./assets/zigZag_logo.png");
+  background-image: url("../public/assets/zigZag_logo.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -43,7 +43,7 @@ span.brand__name {
 span.social__icons {
   width: 80%;
   height: 4rem;
-  background-image: url("./assets/social_icons.png");
+  background-image: url("../public/assets/social_icons.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -56,7 +56,7 @@ section.right__section {
   display: grid;
   place-items: center;
   padding: 2rem;
-  background-image: url("./assets/Right\ side.png");
+  background-image: url("../public/assets/Right-side.png");
   background-size: 100% 100%;
 }
 
@@ -84,7 +84,9 @@ main div {
   justify-content: space-between;
   gap: 2rem;
 }
-
+.header_mobile {
+  display: none;
+}
 main div p {
   height: 3rem;
   width: max-content;
@@ -111,14 +113,14 @@ main div p {
 .googleIcon {
   height: 2rem;
   width: 2rem;
-  background-image: url("./assets/google-icon.png");
+  background-image: url("../public/assets/google-icon.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 
 .appleIcon {
-  background-image: url("./assets/apple-icon.png");
+  background-image: url("../public/assets/apple-icon.png");
 }
 
 form.formDetails {
@@ -200,7 +202,8 @@ span.registerHighlight {
   .App {
     width: 100vw !important;
     flex-direction: column;
-    gap: 4rem;
+    /* gap: 4rem; */
+    /* height: max-content; */
   }
 
   html {
@@ -230,12 +233,20 @@ span.registerHighlight {
     gap: 1rem;
     padding: 2rem;
   }
+
+  .direct__login {
+    flex-direction: column;
+  }
+
+  .header_mobile {
+    display: flex;
+  }
   .logoForMobile {
     height: 5rem;
     width: 5rem;
     background-color: white;
     border-radius: 50%;
-    background-image: url("./assets/zigZag_logo.png");
+    background-image: url("../public/assets/zigZag_logo.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
